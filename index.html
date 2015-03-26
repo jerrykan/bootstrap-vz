@@ -30,7 +30,7 @@ root@host:~# apt-get install parted kpartx
 user@host:~$ sudo -i # become root
 root@host:~# git clone https://github.com/andsens/bootstrap-vz.git # Clone the repo
 root@host:~# apt-get install qemu-utils debootstrap python-pip # Install dependencies from aptitude
-root@host:~# pip install termcolor jsonschema fysom # Install python dependencies
+root@host:~# pip install termcolor jsonschema fysom docopt # Install python dependencies
 root@host:~# bootstrap-vz/bootstrap-vz manifests/virtualbox-vagrant.manifest.json
 </pre>
 	If you want to use <a href="plugins.html#minimize_size">minimize_size</a>
@@ -42,7 +42,7 @@ root@host:~# bootstrap-vz/bootstrap-vz manifests/virtualbox-vagrant.manifest.jso
 user@host:~$ sudo -i # become root
 root@host:~# git clone https://github.com/andsens/bootstrap-vz.git # Clone the repo
 root@host:~# apt-get install debootstrap python-pip # Install dependencies from aptitude
-root@host:~# pip install termcolor jsonschema fysom boto # Install python dependencies
+root@host:~# pip install termcolor jsonschema fysom boto docopt # Install python dependencies
 root@host:~# bootstrap-vz/bootstrap-vz manifests/ec2-ebs-debian-official-amd64-pvm.manifest.json
 </pre>
 	To bootstrap S3 backed AMIs, the <tt>euca2ools</tt> package is the only additional package required.
@@ -69,6 +69,7 @@ root@host:~# bootstrap-vz/bootstrap-vz manifests/ec2-ebs-debian-official-amd64-p
 		<li><a href="https://pypi.python.org/pypi/termcolor">termcolor</a></li>
 		<li><a href="https://pypi.python.org/pypi/fysom">fysom</a></li>
 		<li><a href="https://pypi.python.org/pypi/jsonschema">jsonschema</a></li>
+		<li><a href="https://pypi.python.org/pypi/docopt">docopt</a></li>
 	</ul>
 	To bootstrap Debian itself <a href="https://packages.debian.org/wheezy/debootstrap">debootstrap</a>
 	is needed as well.<br/>
